@@ -1,0 +1,28 @@
+{
+  "html": {
+    "filters": "html",
+    "profile": "html",
+    "snippets": {
+      "script": "<script src='/js/${1:script.js}'></script>",
+      "link": "<link rel='stylesheet' type='text/css' href='/css/${1:style.css}'/>",
+      "img": "<img src='${1}' alt='${2}'/>",
+      "canvas": "<canvas id='cnvs' width='${1}' height='${2}'>\n\t<p>no canvas support</p>\n</canvas>",
+      "svg": "<svg width='${1}' height='${2}' viewbox='0 0 ${1} ${2}'>\n\t${child}${3}\n</svg>",
+      "circle": "<circle cx='${1}' cy='${2}' r='${3}'/>",
+      "rect": "<rect x='${1}' y='${2}' width='${3}' height='${4}'/>",
+      "ellipse": "<ellipse cx='${1}' cy='${2}' rx='${3}' ry='${4}'/>",
+      "text": "<text x='${1}' y='${2}'>${3}</text>",
+      "polyline": "<polyline points='${1}'/>",
+      "polygon": "<polygon points='${1}'/>",
+      "path": "<path d='${1}'/>",
+      "use": "<use href='${1}'/>",
+      "label": "<label>${1}${child}</label>",
+      "input": "<input type='text' name='${1}' value='${2}'/>",
+      "email": "<input type='email' name='${1}' value='${2}'/>",
+      "date": "<input type='date' name='${1}' value='${2}'/>",
+      "number": "<input type='number' name='${1}' min='${2:0}' max='${3}' value='/>",
+      "submit": "<input type='submit' name='${1}' value='${2:submit}'/>",
+      "form": "<form action='${1}' method='${2:post}' accept-charset='utf-8'>\n\t${child}${3}\n</form>"
+    }
+  }
+}
